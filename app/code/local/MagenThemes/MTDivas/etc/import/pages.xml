@@ -1,0 +1,266 @@
+<root><pages><cms_block><title>About Us</title><identifier>about-magento-demo-store</identifier><content><![CDATA[<div class="cms cms-about">
+<div class="page-title">
+<h1>Engaging with your audience.</h1>
+</div>
+<div class="about-wap">
+<div class="row">
+<div class="col-md-4 col-sm-4">
+<h2>About Us</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non sed ligula. Vivamus purus odio, mollis.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna.</p>
+</div>
+<div class="col-md-4 col-sm-4">
+<h2>Our Work</h2>
+<p>Quisque nec nisi tortor.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non.</p>
+</div>
+<div class="col-md-4 col-sm-4">
+<h2>Our slogan</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non sed ligula. Vivamus purus odio, mollis.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna.</p>
+</div>
+</div>
+</div>
+<div class="space" style="height: 60px;">&nbsp;</div>
+<div class="team-wap">
+<h3>Our Team</h3>
+<div class="row">
+<div class="col-md-4 col-sm-4">
+<div class="team-img border-hover"><span class="border-around">Hover see Border</span><img class="img-responsive" src="{{media url="wysiwyg/magenthemes/static/image-about1.jpg"}}" alt="" /></div>
+<h3 class="team-name mb0 pb0">Phuong Nguyen</h3>
+<p class="team-position mb0 pb0">CO - Founder</p>
+<p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis.</p>
+<ul class="social">
+<li><a href="#" target="_blank"><em class="fa fa-facebook-square">facebook</em></a></li>
+<li><a href="#" target="_blank"><em class="fa fa-twitter-square">twitter</em></a></li>
+<li><a href="#" target="_blank"><em class="fa fa-youtube-square">youtube</em></a></li>
+<li><a href="#" target="_blank"><em class="fa fa-skype">skype</em></a></li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-4">
+<div class="team-img border-hover"><span class="border-around">Hover see Border</span><img class="img-responsive" src="{{media url="wysiwyg/magenthemes/static/image-about2.jpg"}}" alt="" /></div>
+<h3 class="team-name mb0 pb0">Phuoc Nguyen</h3>
+<p class="team-position mb0 pb0">CO - Founder</p>
+<p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis.</p>
+<ul class="social">
+<li><a href="#" target="_blank"><em class="fa fa-facebook-square">facebook</em></a></li>
+<li><a href="#" target="_blank"><em class="fa fa-twitter-square">twitter</em></a></li>
+<li><a href="#" target="_blank"><em class="fa fa-youtube-square">youtube</em></a></li>
+<li><a href="#" target="_blank"><em class="fa fa-skype">skype</em></a></li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-4">
+<div class="team-img border-hover"><span class="border-around">Hover see Border</span><img class="img-responsive" src="{{media url="wysiwyg/magenthemes/static/image-about3.jpg"}}" alt="" /></div>
+<h3 class="team-name mb0 pb0">Thach Tong</h3>
+<p class="team-position mb0 pb0">Core Developer</p>
+<p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis.</p>
+<ul class="social">
+<li><a href="#" target="_blank"><em class="fa fa-facebook-square">facebook</em></a></li>
+<li><a href="#" target="_blank"><em class="fa fa-twitter-square">twitter</em></a></li>
+<li><a href="#" target="_blank"><em class="fa fa-youtube-square">youtube</em></a></li>
+<li><a href="#" target="_blank"><em class="fa fa-skype">skype</em></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="space" style="height: 70px;">&nbsp;</div>
+<div class="parallax">
+<div class="mt-parallax">{{widget type="mtwidget/widget" cache="86400" widget_type="block" block_ids="testimonial-one,testimonial-two,testimonial-three" block_lg="testimonial-one,12,|testimonial-two,12,|testimonial-three,12," block_md="testimonial-one,12,|testimonial-two,12,|testimonial-three,12," block_sm="testimonial-one,12,|testimonial-two,12,|testimonial-three,12," block_xs="testimonial-one,12,|testimonial-two,12,|testimonial-three,12," template="mt/widget/default.phtml" scroll="1" autoplay="1" loop="1" paging="1" speed="5000" namespace="flex-" direction="horizontal" responsive="width" move="1" parallax="1" parallax_type="image" parallax_image_src="wysiwyg/magenthemes/parallax/parallax-about.jpg" parallax_image_fit="cover" parallax_image_repeat="no-repeat" parallax_overlay="none" parallax_velocity="0.2"}}</div>
+</div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Responsive magento themes MT Divas</title><identifier>home</identifier><content><![CDATA[<p>&nbsp;</p>
+<!---aaa-->]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Typography</title><identifier>typography</identifier><content><![CDATA[<div class="cms cms-typography">
+    <div class="page-title">
+        <h1>Typography</h1>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><span class="section-title">Sample of basic typography</span> <br />
+        <h1>H1 Heading</h1>
+        <p>Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.</p>
+        <div style="margin-top: 40px;">&nbsp;</div>
+        <h2>H2 Heading</h2>
+        <p>Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.</p>
+        <div style="margin-top: 40px;">&nbsp;</div>
+        <h3>H3 Heading</h3>
+        <p>Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.</p>
+        <div style="margin-top: 40px;">&nbsp;</div>
+        <h4>H4 Heading</h4>
+        <p>Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.</p>
+        <div style="margin-top: 40px;">&nbsp;</div>
+        <h5>H5 Heading</h5>
+        <p>Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.</p>
+        <div style="margin-top: 40px;">&nbsp;</div>
+        <h6>H6 Heading</h6>
+        <p>Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.</p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><span class="section-title">Paragraphs with icons</span> <br />
+        <div class="feature feature-icon-hover indent large"><span class="icon large"> <em class="fa fa-umbrella">&nbsp;</em> </span>
+            <h6 class="above-heading">The Secondary Heading</h6>
+            <h3>Sample Heading</h3>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis.</p>
+            <p>Nullam ornare enim nec justo biben lobortis. In eget metus. Lorem ipsum dolor sit consectetur...</p>
+            <p><em class="fa fa-angle-right">&nbsp;</em><a class="go" href="#">Read more</a></p>
+        </div>
+        <br />
+        <div class="feature feature-icon-hover indent large"><span class="icon large"> <em class="fa fa-star-half-o">&nbsp;</em> </span>
+            <h6 class="above-heading">The Secondary Heading</h6>
+            <h3>Feature Title</h3>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque quis.</p>
+            <p>Nullam ornare enim nec justo bibendum lobortis. In eget metus. Lorem ipsum dolor sit consectetur, adipiscing elit</p>
+            <p><em class="fa fa-angle-right">&nbsp;</em><a class="go" href="#">Read more</a></p>
+        </div>
+        <br />
+        <div class="feature feature-icon-hover indent large"><span class="icon large"> <em class="fa fa-clipboard">&nbsp;</em> </span>
+            <h6 class="above-heading">The Secondary Heading</h6>
+            <h3>Sample Title</h3>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque quis.</p>
+            <p>Nullam ornare enim nec justo bibendum lobortis. In eget metus. Lorem ipsum dolor sit consectetur, adipiscing elit</p>
+            <p><em class="fa fa-angle-right">&nbsp;</em><a class="go" href="#">Read more</a></p>
+        </div>
+        <br />
+        <div class="feature feature-icon-hover indent large"><span class="icon large"> <em class="fa fa-calendar">&nbsp;</em></span>
+            <h6 class="above-heading">The Secondary Heading</h6>
+            <h3>Feature Title</h3>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque quis.</p>
+            <p>Nullam ornare enim nec justo bibendum lobortis. In eget metus. Lorem ipsum dolor sit consectetur, adipiscing elit</p>
+            <p><em class="fa fa-angle-right">&nbsp;</em><a class="go" href="#">Read more</a></p>
+        </div>
+    </div>
+    <div class="clearer">&nbsp;</div>
+    <br /> <br /> <span class="section-title">Ordered and unordered lists</span> <br />
+    <div class="grid12-3">
+        <ul class="bullet">
+            <li><em class="fa fa-angle-right">&nbsp;</em><a href="#">Sample Link</a></li>
+            <li><em class="fa fa-angle-right">&nbsp;</em><a href="#">Lectus vitae ligula tempus</a></li>
+            <li><em class="fa fa-angle-right">&nbsp;</em><a href="#">Vitae lorem ipsum dolor sit amet</a></li>
+            <li><em class="fa fa-angle-right">&nbsp;</em><a href="#">Sample lectus vitae ligula tempus</a></li>
+            <li><em class="fa fa-angle-right">&nbsp;</em><a href="#">Meat Our Best Partners</a></li>
+            <li><em class="fa fa-angle-right">&nbsp;</em><a href="#">Our Other Projects</a></li>
+            <li><em class="fa fa-angle-right">&nbsp;</em><a href="#">One Click To Join Us</a></li>
+            <li><em class="fa fa-angle-right">&nbsp;</em><a href="#">Follow Us On Twitter</a></li>
+            <li><em class="fa fa-angle-right">&nbsp;</em><a href="#">Magento Themes</a></li>
+        </ul>
+    </div>
+    <div class="grid12-3">
+        <ul class="disc">
+            <li><a href="#">Sample Link</a></li>
+            <li><a href="#">Lectus vitae ligula tempus</a></li>
+            <li><a href="#">Vitae lorem ipsum dolor sit amet</a></li>
+            <li><a href="#">Sample lectus vitae ligula tempus</a></li>
+            <li><a href="#">Meat Our Best Partners</a></li>
+            <li><a href="#">Our Other Projects</a></li>
+            <li><a href="#">One Click To Join Us</a></li>
+            <li><a href="#">Follow Us On Twitter</a></li>
+            <li><a href="#">Magento Themes</a></li>
+        </ul>
+    </div>
+    <div class="grid12-3"><ol>
+        <li><a href="#">Sample Link</a></li>
+        <li><a href="#">Lectus vitae ligula tempus</a></li>
+        <li><a href="#">Vitae lorem ipsum dolor sit amet</a></li>
+        <li><a href="#">Sample lectus vitae ligula tempus</a></li>
+        <li><a href="#">Meat Our Best Partners</a></li>
+        <li><a href="#">Our Other Projects</a></li>
+        <li><a href="#">One Click To Join Us</a></li>
+        <li><a href="#">Follow Us On Twitter</a></li>
+        <li><a href="#">Magento Themes</a></li>
+    </ol></div>
+    <div class="grid12-3 custom-feature">
+        <div class="feature indent first"><span class="icon"> <em class="fa fa-check-square-o">&nbsp;</em> </span>
+            <p class="no-margin">Unlimited colors, dozens of customizable elements</p>
+        </div>
+        <div class="feature indent"><span class="icon"> <em class="fa fa-check-square-o">&nbsp;</em> </span>
+            <p class="no-margin ">Customizable responsive layout based on fluid grid</p>
+        </div>
+        <div class="feature indent"><span class="icon"> <em class="fa fa-check-square-o">&nbsp;</em> </span>
+            <p class="no-margin ">50+ placeholders to display custom content</p>
+        </div>
+        <div class="feature indent last"><span class="icon"> <em class="fa fa-check-square-o">&nbsp;</em> </span>
+            <p class="no-margin ">Create your custom sub-themes (variants)</p>
+        </div>
+    </div>
+    <div class="clearer">&nbsp;</div>
+    <br /> <br /> <span class="section-title">System messages</span> <br />
+    <ul class="messages">
+        <li class="success-msg">
+            <ul>
+                <li><em class="fa fa-check-square">&nbsp;</em><span>These are sample system messages displayed by Magento.</span></li>
+            </ul>
+        </li>
+        <li class="error-msg">
+            <ul>
+                <li><em class="fa fa-exclamation-triangle">&nbsp;</em><span>The maximum quantity allowed for purchase is 10.</span></li>
+            </ul>
+        </li>
+        <li class="notice-msg">
+            <ul>
+                <li><em class="fa fa-lightbulb-o">&nbsp;</em><span>Please specify the product's option(s).</span></li>
+            </ul>
+        </li>
+    </ul>
+    <br /> <br /> <span class="section-title">Paragraphs with icons</span> <br />
+    <div class="grid12-4">
+        <div class="feature feature-icon-hover large"><span class="icon large"> <em class="fa fa-bell-o">&nbsp;</em> </span>
+            <h6 class="above-heading">The Secondary Heading</h6>
+            <h3>Sample Heading</h3>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis.</p>
+            <p>Nullam ornare enim nec justo biben lobortis. In eget metus. Lorem ipsum dolor sit consectetur...</p>
+            <p><em class="fa fa-angle-right">&nbsp;</em><a class="go" href="#">Read more</a></p>
+        </div>
+    </div>
+    <div class="grid12-4">
+        <div class="feature feature-icon-hover large"><span class="icon large"> <em class="fa fa-trophy">&nbsp;</em> </span>
+            <h6 class="above-heading">The Secondary Heading</h6>
+            <h3>Feature Title</h3>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque quis.</p>
+            <p>Nullam ornare enim nec justo bibendum lobortis. In eget metus. Lorem ipsum dolor sit consectetur, adipiscing elit</p>
+            <p><em class="fa fa-angle-right">&nbsp;</em><a class="go" href="#">Read more</a></p>
+        </div>
+    </div>
+    <div class="grid12-4">
+        <div class="feature feature-icon-hover large"><span class="icon large"> <em class="fa fa-gift">&nbsp;</em> </span>
+            <h6 class="above-heading">The Secondary Heading</h6>
+            <h3>Sample Title</h3>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque quis.</p>
+            <p>Nullam ornare enim nec justo bibendum lobortis. In eget metus. Lorem ipsum dolor sit consectetur, adipiscing elit</p>
+            <p><em class="fa fa-angle-right">&nbsp;</em><a class="go" href="#">Read more</a></p>
+        </div>
+    </div>
+    <div class="clearer">&nbsp;</div>
+    <br /> <br />
+    <h3 id="banners" class="section-title">Sample Custom Banners</h3>
+    <br />
+    <p>Here you can see some examples of banners.<br /> Banners can be placed on any CMS page, and in any CMS block. Each banner is a simple image inside a link.</p>
+    <br />
+    <div class="nested-container">
+        <div class="page-banners row clearer">
+            <div class="col-sm-12 col-md-12 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+        </div>
+    </div>
+    <div class="nested-container">
+        <div class="page-banners row clearer">
+            <div class="col-sm-6 col-md-6 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+            <div class="col-sm-6 col-md-6 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+        </div>
+    </div>
+    <div class="nested-container">
+        <div class="page-banners row clearer">
+            <div class="col-sm-4 col-md-4 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+            <div class="col-sm-4 col-md-4 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+            <div class="col-sm-4 col-md-4 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+        </div>
+    </div>
+    <div class="nested-container">
+        <div class="page-banners row clearer">
+            <div class="col-sm-3 col-md-3 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+            <div class="col-sm-3 col-md-3 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+            <div class="col-sm-3 col-md-3 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+            <div class="col-sm-3 col-md-3 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+        </div>
+    </div>
+    <div class="nested-container">
+        <div class="page-banners row clearer">
+            <div class="col-sm-2 col-md-2 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+            <div class="col-sm-2 col-md-2 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+            <div class="col-sm-2 col-md-2 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+            <div class="col-sm-2 col-md-2 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+            <div class="col-sm-2 col-md-2 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+            <div class="col-sm-2 col-md-2 banner"><a title="Replace this image with your own" href="#">Sample banner</a></div>
+        </div>
+    </div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block></pages></root>

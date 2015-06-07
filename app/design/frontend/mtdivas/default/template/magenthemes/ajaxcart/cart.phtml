@@ -1,0 +1,83 @@
+<?php
+/**
+ *
+ * ------------------------------------------------------------------------------
+ * @category     MT
+ * @package      MT_Themes
+ * ------------------------------------------------------------------------------
+ * @copyright    Copyright (C) 2008-2013 MagentoThemes.net. All Rights Reserved.
+ * @license      GNU General Public License version 2 or later;
+ * @author       MagentoThemes.net
+ * @email        support@magentothemes.net
+ * ------------------------------------------------------------------------------
+ *
+ */
+?>
+<?php
+$enable = Mage::getStoreConfig('ajaxcart/ajaxcart_config/enable_ajaxcart');
+$theme = $this->helper('mtdivas');
+$layout = $theme->getCfg('header/layout');
+if($enable){
+    ?>
+    <?php $_cartQty = $this->getSummaryCount() ?>
+    <span class="mt-cart-loading">Loading...</span>
+    <?php if($layout == 'layout9' || $layout == 'layout11') { ?>
+        <span class="mt-icon-ajax"><i class="fa fa-shopping-cart"></i></span>
+    <?php } ?>
+    <div class="mt-cart">
+        <?php if($layout != 'layout9' && $layout != 'layout11') { ?>
+            <div class="mt-icon-ajaxcart">
+                <a class="mt-cart-label" href="<?php echo $this->getUrl('checkout/cart') ?>">
+                    <?php if($layout == 'layout2'): ?>
+                        <i class="fa fa-shopping-cart pull-left"></i>
+                    <?php endif; ?>
+                    <span class="print">
+				<span><?php echo $this->__('Bag:') ?>(<?php print (!empty($_cartQty)) ? $_cartQty : '0' ;?>)</span>
+				<!--<?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?>&nbsp;-->
+			</span>
+                </a>
+            </div>
+        <?php } ?>
+        <div class="ajaxcart">
+            <div class="search-form-border"></div>
+            <div class="mt-ajax-container">
+                <?php
+                $_items = $this->getRecentItems($_cartQty);
+                if(count($_items)):
+                    ?>
+                    <ul class="clearfix">
+                        <?php foreach($_items as $_item): ?>
+                            <?php echo $this->getItemHtml($_item) ?>
+                        <?php endforeach; ?>
+                    </ul>
+                    <p class="subtotal">
+                        <?php if ($this->canApplyMsrp()): ?>
+                            <span class="map-cart-sidebar-total"><?php echo $this->__('ORDER TOTAL WILL BE DISPLAYED BEFORE YOU SUBMIT THE ORDER'); ?></span>
+                        <?php else: ?>
+                            <span class="label"><?php echo $this->__('Total:') ?></span> <?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?>
+                            <?php if ($_subtotalInclTax = $this->getSubtotalInclTax()): ?>
+                                <br />(<?php echo Mage::helper('checkout')->formatPrice($_subtotalInclTax) ?> <?php echo Mage::helper('tax')->getIncExcText(true) ?>)
+                            <?php endif; ?>
+                        <?php endif; ?>
+                    </p>
+                    <div class="mt-ajax-checkout">
+                        <a href="<?php echo $this->getUrl('checkout/cart') ?>" class="view-cart">
+                            <span><?php echo $this->__('View cart') ?></span>
+                        </a>
+                        <?php if(Mage::getStoreConfig('opc/global/status')){?>
+                            <a href="<?php echo $this->getUrl('onepage') ?>"><span><?php echo $this->__('Checkout') ?></span></a>
+                        <?php }else{?>
+                            <a href="<?php echo $this->getCheckoutUrl() ?>"><span><?php echo $this->__('Checkout') ?></span></a>
+                        <?php }?>
+                    </div>
+                <?php else: ?>
+                    <p class="no-items-in-cart"><?php echo $this->__('You have no items in your shopping cart.') ?></p>
+                <?php endif ?>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var datatext = {};
+        datatext.load = '<?php echo $this->__('processing');?>';
+    </script>
+<?php }?>
