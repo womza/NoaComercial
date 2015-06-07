@@ -146,7 +146,9 @@
 			<?php if (!$this->getIsVirtual()): echo $this->getChildHtml('shipping'); endif; ?>
 		</div>
         <div class="totals col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <?php echo $this->getChildHtml('totals'); ?>
+            <?php if(Mage::getSingleton('customer/session')->isLoggedIn()): ?>
+                <?php echo $this->getChildHtml('totals'); ?>
+            <?php endif; /* if ($this->isCustomerLoggedIn()): */ ?>
             <?php if(!$this->hasError()): ?>
             <ul class="checkout-types">
             <?php foreach ($this->getMethods('methods') as $method): ?>

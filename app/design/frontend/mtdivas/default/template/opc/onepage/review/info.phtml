@@ -24,6 +24,11 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
+<?php if(!Mage::getSingleton('customer/session')->isLoggedIn()): ?>
+    <style type="text/css">
+        .price { display: none; }
+    </style>
+<?php endif; /* if ($this->isCustomerLoggedIn()): */ ?>
 <?php echo $this->getChildHtml('items_before'); ?>
 <div id="checkout-review-table-wrapper">
     <table class="opc-data-table" id="checkout-review-table">

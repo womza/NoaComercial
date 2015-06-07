@@ -15,9 +15,11 @@ $_items = $_helper->getItemCount() > 0 ? $_helper->getItemCollection() : null;
                         </a>
                         <div class="product-details">
                             <p class="product-name clearfix"><a href="<?php echo $this->getProductUrl($_item) ?>"><?php echo $this->helper('catalog/output')->productAttribute($_item, $_item->getName(), 'name') ?></a></p>
-                            <div class="items clearfix">
-                                <?php echo $this->getPriceHtml($_item, true) ?>
-                            </div>
+                            <?php if(Mage::getSingleton('customer/session')->isLoggedIn()): ?>
+                                <div class="items clearfix">
+                                    <?php echo $this->getPriceHtml($_item, true) ?>
+                                </div>
+                            <?php endif; /* if ($this->isCustomerLoggedIn()): */ ?>
                             <div class="access clearfix">
                                 <a data-id="<?php echo $_item->getId() ?>" href="<?php echo $_helper->getRemoveUrl($_item) ?>" title="<?php echo $this->__('Remove') ?>" class="btn-remove" data-confirm="<?php echo $this->__('Are you sure you would like to remove this item from the compare products?') ?>"><span class="icon"></span><?php echo $this->__('Remove') ?></a>
                             </div>
