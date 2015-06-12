@@ -25,7 +25,7 @@
  */
 ?>
 <div class="product-options" id="product-options-wrapper">
-    <h2 class="mt0">Available Options</h2>
+    <h2 class="mt0"><?php echo $this->__('Available Options') ?></h2>
     <?php if ($this->hasRequiredOptions()):?>
     <p class="required pull-right"><?php echo $this->__('* Required Fields') ?></p>
     <?php endif;?>
