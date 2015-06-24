@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_applicationregistration_index>
+        <reference name="content">
+            <block type="applicationregistration/adminhtml_applicationregistration" name="applicationregistration" />
+        </reference>
+    </adminhtml_applicationregistration_index>
+    <adminhtml_applicationregistration_edit>
+        <reference name="content">
+            <block type="applicationregistration/adminhtml_applicationregistration_edit" name="applicationregistration_edit" />
+        </reference>
+    </adminhtml_applicationregistration_edit>
+</layout>

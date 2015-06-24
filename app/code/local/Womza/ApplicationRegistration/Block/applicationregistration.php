@@ -1,0 +1,5 @@
+<?php
+class Womza_ApplicationRegistration_Block_ApplicationRegistration extends Mage_Core_Block_Template
+{
+
+}

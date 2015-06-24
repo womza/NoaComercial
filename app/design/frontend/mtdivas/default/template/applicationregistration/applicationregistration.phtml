@@ -1,0 +1,94 @@
+<div class="box applicationregistration">
+    <form action="<?php echo $this->getUrl('applicationregistration/index/save') ?>" method="post" id="applicationregistration_form" name="applicationregistration_form">
+        <div class="fieldset">
+            <h2 class="legend"><?php echo $this->__('Application of Registration') ?></h2>
+            <ul class="form-list">
+                <li class="fields">
+                    <div class="field name">
+                        <label for="name" class="required">
+                            <em>*</em>
+                            <?php echo $this->__('Name') ?>
+                        </label>
+                        <div class="input-box">
+                            <input name="name" id="name" title="<?php echo $this->__('Name') ?>" value="" class="required-entry input-text" type="text" />
+                        </div>
+                    </div>
+                </li>
+                <li class="fields">
+                    <div class="field location">
+                        <label for="location" class="required">
+                            <em>*</em>
+                            <?php echo $this->__('Location') ?>
+                        </label>
+                        <div class="input-box">
+                            <input name="location" id="location" title="<?php echo $this->__('Location') ?>" value="" class="required-entry input-text" type="text" />
+                        </div>
+                    </div>
+                </li>
+                <li class="fields">
+                    <div class="field province">
+                        <label for="province" class="required">
+                            <em>*</em>
+                            <?php echo $this->__('Province') ?>
+                        </label>
+                        <div class="input-box">
+                            <input name="province" id="province" title="<?php echo $this->__('Province') ?>" value="" class="required-entry input-text" type="text" />
+                        </div>
+                    </div>
+                </li>
+                <li class="fields">
+                    <div class="field company">
+                        <label for="company">
+                            <?php echo $this->__('Company') ?>
+                        </label>
+                        <div class="input-box">
+                            <input name="company" id="company" title="<?php echo $this->__('Company') ?>" value="" class="input-text" type="text" />
+                        </div>
+                    </div>
+                </li>
+                <li class="fields">
+                    <div class="field email">
+                        <label for="email" class="required">
+                            <em>*</em>
+                            <?php echo $this->__('Email') ?>
+                        </label>
+                        <div class="input-box">
+                            <input name="email" id="email" title="<?php echo $this->__('Email') ?>" value="" class="required-entry validate-email input-text" type="text" />
+                        </div>
+                    </div>
+                </li>
+                <li class="fields">
+                    <div class="field phone">
+                        <label for="phone">
+                            <?php echo $this->__('Phone') ?>
+                        </label>
+                        <div class="input-box">
+                            <input name="phone" id="phone" title="<?php echo $this->__('Phone') ?>" value="" class="input-text" type="text" />
+                        </div>
+                    </div>
+                </li>
+                <li class="fields">
+                    <div class="field comment">
+                        <label for="comment">
+                            <?php echo $this->__('Comment') ?>
+                        </label>
+                        <div class="input-box">
+                            <textarea name="comment" id="comment" class="input-text"></textarea>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <p class="required"><?php echo $this->__('* Required Fields') ?></p>
+            <button type="submit" class="button" title="<?php echo $this->__('Save') ?>" name="save" id="save">
+                <span>
+                    <span><?php echo $this->__('Save') ?></span>
+                </span>
+            </button>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    //< ![CDATA[
+    var myForm= new VarienForm('applicationregistration_form', true);
+    //]]>
+</script>

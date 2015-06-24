@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Womza_ApplicationRegistration>
+            <version>0.1.0</version>
+        </Womza_ApplicationRegistration>
+    </modules>
+    <!-- frontend -->
+    <frontend>
+        <routers>
+            <applicationregistration>
+                <use>standard</use>
+                <args>
+                    <module>Womza_ApplicationRegistration</module>
+                    <frontName>applicationregistration</frontName>
+                </args>
+            </applicationregistration>
+            <customer>
+                <args>
+                    <modules>
+                        <Womza_ApplicationRegistration before="Mage_Customer">Womza_ApplicationRegistration_Customer</Womza_ApplicationRegistration>
+                    </modules>
+                </args>
+            </customer>
+        </routers>
+        <layout>
+            <updates>
+                <applicationregistration>
+                    <file>applicationregistration.xml</file>
+                </applicationregistration>
+            </updates>
+        </layout>
+    </frontend>
+
+    <!-- adminhtml -->
+    <admin>
+        <routers>
+            <applicationregistration>
+                <use>admin</use>
+                <args>
+                    <module>Womza_ApplicationRegistration</module>
+                    <frontName>applicationregistration</frontName>
+                </args>
+            </applicationregistration>
+        </routers>
+    </admin>
+    <adminhtml>
+        <menu>
+            <customer translate="title" module="applicationregistration">
+                <children>
+                    <set_time>
+                        <title>Application of Register</title>
+                        <action>applicationregistration/adminhtml_applicationregistration</action>
+                        <sort_order>200</sort_order>
+                    </set_time>
+                </children>
+            </customer>
+        </menu>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <applicationregistration>
+                            <title>ApplicationRegistration Module</title>
+                            <sort_order>200</sort_order>
+                        </applicationregistration>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <applicationregistration>
+                    <file>applicationregistration.xml</file>
+                </applicationregistration>
+            </updates>
+        </layout>
+    </adminhtml>
+
+    <!-- global -->
+    <global>
+        <models>
+            <applicationregistration>
+                <class>Womza_ApplicationRegistration_Model</class>
+                <resourceModel>applicationregistration_mysql4</resourceModel>
+            </applicationregistration>
+            <applicationregistration_mysql4>
+                <class>Womza_ApplicationRegistration_Model_Mysql4</class>
+                <entities>
+                    <applicationregistration>
+                        <table>applicationregistration</table>
+                    </applicationregistration>
+                </entities>
+            </applicationregistration_mysql4>
+        </models>
+        <resources>
+            <applicationregistration_setup>
+                <setup>
+                    <module>Womza_ApplicationRegistration</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </applicationregistration_setup>
+            <applicationregistration_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </applicationregistration_write>
+            <applicationregistration_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </applicationregistration_read>
+        </resources>
+        <!-- helper -->
+        <helpers>
+            <applicationregistration>
+                <class>Womza_ApplicationRegistration_Helper</class>
+            </applicationregistration>
+        </helpers>
+        <!-- start of block -->
+        <blocks>
+            <applicationregistration>
+                <class>Womza_ApplicationRegistration_Block</class>
+            </applicationregistration>
+        </blocks>
+    </global>
+</config>
