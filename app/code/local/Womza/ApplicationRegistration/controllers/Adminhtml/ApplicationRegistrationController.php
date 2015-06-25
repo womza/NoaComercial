@@ -30,7 +30,7 @@ class Womza_ApplicationRegistration_Adminhtml_ApplicationRegistrationController
     public function editAction()
     {
         $id = $this->getRequest()->getParam('id');
-        $model = Mage::getModel('applicationregistration/applicationregistration')->load($id);
+        $model = Mage::getModel('applicationregistration/registration')->load($id);
 
         if ($model->getId()) {
             Mage::register('applicationregistration_data', $model);
@@ -64,7 +64,7 @@ class Womza_ApplicationRegistration_Adminhtml_ApplicationRegistrationController
         if ( $this->getRequest()->getPost() ) {
             try {
                 $postData = $this->getRequest()->getPost();
-                $model = Mage::getModel('applicationregistration/applicationregistration');
+                $model = Mage::getModel('applicationregistration/registration');
 
                 $model->setId($this->getRequest()->getParam('id'))
                     ->setName($postData['name'])
@@ -96,7 +96,7 @@ class Womza_ApplicationRegistration_Adminhtml_ApplicationRegistrationController
     {
         if( $this->getRequest()->getParam('id') > 0 ) {
             try {
-                $model = Mage::getModel('applicationregistration/applicationregistration');
+                $model = Mage::getModel('applicationregistration/registration');
 
                 $model->setId($this->getRequest()->getParam('id'))->delete();
 

@@ -2,7 +2,7 @@
 <layout version="0.1.0">
     <applicationregistration_index_index>
         <reference name="content">
-            <block type="applicationregistration/applicationregistration" name="applicationregistration" template="applicationregistration/applicationregistration.phtml" />
+            <block type="core/template" name="applicationregistration_block" template="applicationregistration/applicationregistration.phtml" />
         </reference>
     </applicationregistration_index_index>
 </layout>

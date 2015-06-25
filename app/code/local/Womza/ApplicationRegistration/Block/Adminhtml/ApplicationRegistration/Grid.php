@@ -14,7 +14,7 @@ class Womza_ApplicationRegistration_Block_Adminhtml_ApplicationRegistration_Grid
 
     protected function _prepareCollection()
     {
-        $collection = Mage::getModel('applicationregistration/applicationregistration')->getCollection();
+        $collection = Mage::getModel('applicationregistration/registration')->getCollection();
         $this->setCollection($collection);
         return parent::_prepareCollection();
     }

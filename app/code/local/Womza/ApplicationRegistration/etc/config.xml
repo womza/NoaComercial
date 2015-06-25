@@ -33,17 +33,6 @@
     </frontend>
 
     <!-- adminhtml -->
-    <admin>
-        <routers>
-            <applicationregistration>
-                <use>admin</use>
-                <args>
-                    <module>Womza_ApplicationRegistration</module>
-                    <frontName>applicationregistration</frontName>
-                </args>
-            </applicationregistration>
-        </routers>
-    </admin>
     <adminhtml>
         <menu>
             <customer translate="title" module="applicationregistration">
@@ -63,10 +52,10 @@
                 </all>
                 <admin>
                     <children>
-                        <applicationregistration>
+                        <Womza_ApplicationRegistration>
                             <title>ApplicationRegistration Module</title>
                             <sort_order>200</sort_order>
-                        </applicationregistration>
+                        </Womza_ApplicationRegistration>
                     </children>
                 </admin>
             </resources>
@@ -79,27 +68,39 @@
             </updates>
         </layout>
     </adminhtml>
+    <admin>
+        <routers>
+            <applicationregistration>
+                <use>admin</use>
+                <args>
+                    <module>Womza_ApplicationRegistration</module>
+                    <frontName>applicationregistration</frontName>
+                </args>
+            </applicationregistration>
+        </routers>
+    </admin>
 
     <!-- global -->
     <global>
         <models>
             <applicationregistration>
                 <class>Womza_ApplicationRegistration_Model</class>
-                <resourceModel>applicationregistration_mysql4</resourceModel>
+                <resourceModel>applicationregistration_resource</resourceModel>
             </applicationregistration>
-            <applicationregistration_mysql4>
-                <class>Womza_ApplicationRegistration_Model_Mysql4</class>
+            <applicationregistration_resource>
+                <class>Womza_ApplicationRegistration_Model_Resource</class>
                 <entities>
-                    <applicationregistration>
+                    <registration>
                         <table>applicationregistration</table>
-                    </applicationregistration>
+                    </registration>
                 </entities>
-            </applicationregistration_mysql4>
+            </applicationregistration_resource>
         </models>
         <resources>
             <applicationregistration_setup>
                 <setup>
                     <module>Womza_ApplicationRegistration</module>
+                    <class>Womza_ApplicationRegistration_Model_Resource_Setup</class>
                 </setup>
                 <connection>
                     <use>core_setup</use>
