@@ -1,0 +1,15 @@
+<?php if ($message = $this->getMessage()) : ?>
+    <?php if ((int)$message > 0) :?>
+        <div class="notification-global">
+            <strong class="label"><?php echo Mage::helper('applicationregistration')->__('Requests for records:') ?></strong>
+            <a href="<?php echo Mage::getSingleton('adminhtml/url')->getUrl('applicationregistration/adminhtml_applicationregistration') ?>">
+                <b><?php echo $message ?></b>&nbsp;
+                <?php if ((int)$message > 1) :?>
+                    <?php echo Mage::helper('applicationregistration')->__('Requests') ?>
+                <?php else :?>
+                    <?php echo Mage::helper('applicationregistration')->__('Request') ?>
+                <?php endif ?>
+            </a>
+        </div>
+    <?php endif ?>
+<?php endif; ?>

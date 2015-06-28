@@ -35,6 +35,13 @@ class Womza_ApplicationRegistration_Adminhtml_ApplicationRegistrationController
         if ($model->getId()) {
             Mage::register('applicationregistration_data', $model);
 
+            // check if register have 0 checked
+            if ((int)$model->getChecked() === 0)
+            {
+                $model->setChecked(1);
+                $model->save();
+            }
+
             $data = Mage::getSingleton('adminhtml/session')->getFormData(true);
             if ($data) {
                 $model->setData($data)->setId($id);

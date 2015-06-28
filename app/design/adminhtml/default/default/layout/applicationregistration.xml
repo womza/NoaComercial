@@ -10,4 +10,9 @@
             <block type="applicationregistration/adminhtml_applicationregistration_edit" name="applicationregistration_edit" />
         </reference>
     </adminhtml_applicationregistration_edit>
+    <default>
+        <reference name="notifications">
+            <block type="applicationregistration/adminhtml_notifications" name="applicationregistration_notifications" template="applicationregistration/notifications.phtml"/>
+        </reference>
+    </default>
 </layout>

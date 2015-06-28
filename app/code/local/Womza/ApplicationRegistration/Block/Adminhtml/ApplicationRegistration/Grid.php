@@ -52,6 +52,17 @@ class Womza_ApplicationRegistration_Block_Adminhtml_ApplicationRegistration_Grid
                 'align' =>'left',
                 'index' => 'email',
             ));
+        $this->addColumn('checked',
+            array(
+                'header' => Mage::helper('applicationregistration')->__('Checked'),
+                'align' =>'left',
+                'index' => 'checked',
+                'type' => 'options',
+                'options' => array(
+                    0 => Mage::helper('applicationregistration')->__('No'),
+                    1 => Mage::helper('applicationregistration')->__('Yes'),
+                )
+            ));
         $this->addColumn('created_time',
             array(
                 'header' => Mage::helper('applicationregistration')->__('Creation Time'),

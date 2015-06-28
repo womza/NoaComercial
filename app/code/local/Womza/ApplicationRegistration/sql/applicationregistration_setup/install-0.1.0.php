@@ -12,6 +12,7 @@ CREATE TABLE {$this->getTable('applicationregistration')} (
   `email` varchar(200) NOT NULL,
   `phone` varchar(200) NOT NULL,
   `comment` text NOT NULL,
+  `checked` tinyint(1) DEFAULT 0 NOT NULL,
   `created_time` datetime,
   PRIMARY KEY (`applicationregistration_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
