@@ -129,5 +129,11 @@
                 <class>Womza_ApplicationRegistration_Block</class>
             </applicationregistration>
         </blocks>
+        <!-- email -->
+        <applicationregistration>
+            <label>Requests for records</label>
+            <file>applicationregistration.html</file>
+            <type>html</type>
+        </applicationregistration>
     </global>
 </config>
