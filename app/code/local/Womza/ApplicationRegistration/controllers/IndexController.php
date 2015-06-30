@@ -22,7 +22,7 @@ class Womza_ApplicationRegistration_IndexController extends Mage_Core_Controller
             $applicationregistration->setData('email', $params['email']);
             $applicationregistration->setData('phone', $params['phone']);
             $applicationregistration->setData('comment', $params['comment']);
-            $applicationregistration->setData('created_time', Mage::app()->getLocale()->getDateTimeFormat(Mage_Core_Model_Locale::FORMAT_TYPE_LONG));
+            $applicationregistration->setData('created_time', date('Y-m-d h:m:s', Mage::getModel('core/date')->timestamp(time())));
             $applicationregistration->save();
 
             Mage::getSingleton('core/session')->addSuccess(Mage::helper('applicationregistration')->__('Thank you, your application will be processed'));

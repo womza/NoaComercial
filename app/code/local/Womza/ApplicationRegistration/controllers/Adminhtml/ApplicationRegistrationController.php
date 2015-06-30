@@ -83,7 +83,7 @@ class Womza_ApplicationRegistration_Adminhtml_ApplicationRegistrationController
                     ->setComment($postData['comment'])
                     ->save();
 
-                Mage::getSingleton('adminhtml/session')->addSuccess(Mage::helper('adminhtml')->__('Item was successfully saved'));
+                Mage::getSingleton('adminhtml/session')->addSuccess(Mage::helper('applicationregistration')->__('Item was successfully saved'));
                 Mage::getSingleton('adminhtml/session')->setApplicationRegistrationData(false);
 
                 $this->_redirect('*/*/');
@@ -107,7 +107,7 @@ class Womza_ApplicationRegistration_Adminhtml_ApplicationRegistrationController
 
                 $model->setId($this->getRequest()->getParam('id'))->delete();
 
-                Mage::getSingleton('adminhtml/session')->addSuccess(Mage::helper('adminhtml')->__('Item was successfully deleted'));
+                Mage::getSingleton('adminhtml/session')->addSuccess(Mage::helper('applicationregistration')->__('Item was successfully deleted'));
                 $this->_redirect('*/*/');
             } catch (Exception $e) {
                 Mage::getSingleton('adminhtml/session')->addError($e->getMessage());

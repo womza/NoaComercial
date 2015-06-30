@@ -67,6 +67,15 @@
                 </applicationregistration>
             </updates>
         </layout>
+        <translate>
+            <modules>
+                <applicationregistration>
+                    <files>
+                        <default>Womza_ApplicationRegistration.csv</default>
+                    </files>
+                </applicationregistration>
+            </modules>
+        </translate>
     </adminhtml>
     <admin>
         <routers>
